@@ -11,6 +11,8 @@
 //   },
 // };
 
+// john.fullName();
+
 // const bob = {
 //   firstName: 'bob',
 //   lastName: 'sanders',
@@ -24,14 +26,20 @@ function createPerson(firstName, lastName) {
   return {
     firstName: firstName,
     lastName: lastName,
-    fullName: function () {
+    // shorthand of creating method
+    fullName() {
       console.log(`My full name is ${this.firstName} ${this.lastName}`);
     },
   };
 }
 
-const john = createPerson('john', 'anderson');
-john.fullName();
+// explicit way of writing
+// fullName: function () {
+//   console.log(`My full name is ${this.firstName} ${this.lastName}`);
+// }
+
+// const john = createPerson('john', 'anderson');
+// john.fullName();
 const susy = createPerson('susy', 'apple');
 susy.fullName();
 const bob = createPerson('bob', 'jordan');

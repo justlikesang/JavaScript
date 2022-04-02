@@ -4,6 +4,7 @@
 // new - creates new object, points to it, omit return
 
 function Person(firstName, lastName) {
+  this.test = 'hello';
   this.firstName = firstName;
   this.lastName = lastName;
   this.fullName = function () {
@@ -15,9 +16,10 @@ function Person(firstName, lastName) {
 }
 
 const john = new Person('john', 'anderson');
-john.fullName();
-const bob = new Person('bob', 'jordan');
-bob.fullName();
+console.log(john);
+// john.fullName();
+// const bob = new Person('bob', 'jordan');
+// bob.fullName();
 
 function createPerson(firstName, lastName) {
   return {

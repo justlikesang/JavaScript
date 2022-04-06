@@ -31,6 +31,8 @@ console.log(sayHi.constructor);
 const susy = new john.constructor('susy', 'carpenter');
 susy.fullName();
 
+console.log(Object.constructor);
+
 // const john = new Person('john', 'sanders');
 // console.log(john.constructor);
 
